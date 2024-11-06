@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimwel Hurry - Web Developer</title>
+    <link rel="icon" href="img/logo.jpg" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+            var activeSection = document.getElementById(sectionId);
+            if (activeSection) {
+                activeSection.style.display = 'block';
+                activeSection.classList.add('fade-in');
+            }
+        }
+
+        window.onload = function() {
+            showSection('about');
+        };
+    </script>
+</head>
+<body>
+
+    
+
+    <div class="container">
+        <!-- First Card: Contact Information -->
+        <div class="card contact-card">
+            <header>
+              
+                <img src="img/jimwel.JPG" alt="Profile Picture" class="profile-pic mb-3">
+                <h1>Jimwel Hurry</h1>
+                <p>Web Developer | Student | Programmer</p>
+            </header>
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><i class="fas fa-envelope"></i> Email: jimboyhurry072702@gmail.com</p>
+                <p><i class="fas fa-phone-alt"></i> Phone: N/A</p>
+                <p><i class="fas fa-birthday-cake"></i> Birthday: July 27, 2002</p>
+                <p><i class="fas fa-map-marker-alt"></i> Location: Calamba, Laguna, Philippines</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/JimwelManguiat/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/jmmngt27/profilecard/?igsh=cDdqMnFpOG5pNzhp&fbclid=IwY2xjawGXIvxleHRuA2FlbQIxMAABHVg6Pp1jGHeS8RZFngjn-9ZSU7lzrUFKn25ksx4A8PpF8y0ev49eYe4f1A_aem_rd0Jx4I7fOyPxHcJGBwxsQ" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/JimwelHurry" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Card: Main Content -->
+        <div class="card large-card">
+            <div class="navbar mb-3">
+                <a href="javascript:void(0);" onclick="showSection('about')">About Me</a>
+                <a href="javascript:void(0);" onclick="showSection('skills')">Skills</a>
+                <a href="javascript:void(0);" onclick="showSection('projects')">Projects</a>
+                <a href="javascript:void(0);" onclick="showSection('academic')">Academic Experience</a>
+               
+                
+            </div>
+
+
+
+            <!--                            About                                          -->
+
+
+
+
+
+
+            <div id="about" class="section" style="padding: 40px; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
+                <h2 style="font-size: 2.5rem; margin-bottom: 20px; text-align: center; color: #333;">About Me</h2>
+                <p style="font-size: 1.2rem; line-height: 1.6; color: #555;">
+                    Hello, I'm Jimwel Hurry, a student from Calamba, Laguna, Philippines. I have a passion for technology, sports, and cooking. I'm also enthusiastic about programming and entrepreneurship, always looking for new opportunities to learn and grow.
+                </p>
+                
+                <h3 style="font-size: 1.75rem; margin-top: 30px; color: #333;">Current Focus</h3>
+                <div class="row" style="display: flex; flex-wrap: wrap; justify-content: space-around; margin-top: 20px;">
+                    <div class="focus-box" style="flex: 1; padding: 20px; margin: 10px; border: 1px solid #007BFF; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); text-align: center; background-color: #fff; animation: fadeInUp 0.5s ease;">
+                        <i class="fas fa-laptop-code fa-3x" style="color: #007BFF;"></i>
+                        <h4 style="font-size: 1.5rem; margin: 15px 0; color: #007BFF;">Web Development</h4>
+                        <p style="font-size: 1rem; color: #555;">Creating responsive and engaging websites.</p>
+                    </div>
+                    <div class="focus-box" style="flex: 1; padding: 20px; margin: 10px; border: 1px solid #007BFF; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); text-align: center; background-color: #fff; animation: fadeInUp 0.6s ease;">
+                        <i class="fas fa-code fa-3x" style="color: #007BFF;"></i>
+                        <h4 style="font-size: 1.5rem; margin: 15px 0; color: #007BFF;">Programming</h4>
+                        <p style="font-size: 1rem; color: #555;">Passionate about coding and problem-solving.</p>
+                    </div>
+                    <div class="focus-box" style="flex: 1; padding: 20px; margin: 10px; border: 1px solid #007BFF; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); text-align: center; background-color: #fff; animation: fadeInUp 0.7s ease;">
+                        <i class="fas fa-bullseye fa-3x" style="color: #007BFF;"></i>
+                        <h4 style="font-size: 1.5rem; margin: 15px 0; color: #007BFF;">UI/UX Design</h4>
+                        <p style="font-size: 1rem; color: #555;">Designing intuitive user experiences.</p>
+                    </div>
+                    <div class="focus-box" style="flex: 1; padding: 20px; margin: 10px; border: 1px solid #007BFF; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); text-align: center; background-color: #fff; animation: fadeInUp 0.8s ease;">
+                        <i class="fas fa-comments fa-3x" style="color: #007BFF;"></i>
+                        <h4 style="font-size: 1.5rem; margin: 15px 0; color: #007BFF;">Collaboration</h4>
+                        <p style="font-size: 1rem; color: #555;">Emphasizing teamwork to achieve great results.</p>
+                    </div>
+                </div>
+                
+                <h3 style="font-size: 1.75rem; margin-top: 30px; color: #333;">My Mission</h3>
+                <div style="padding: 20px; margin: 10px; border: 1px solid #007BFF; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); text-align: center; background-color: #fff; animation: fadeInUp 0.9s ease;">
+                    <p style="font-size: 1.2rem; color: #555;">My mission is to empower businesses and individuals through technology, transforming innovative ideas into reality to create positive impacts in people's lives.</p>
+                </div>
+                
+                <h3 style="font-size: 1.75rem; margin-top: 30px; color: #333;">Fun Facts</h3>
+                <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+                    <div class="fun-fact" style="padding: 15px; margin: 10px; border: 1px solid #007BFF; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); background-color: #fff; width: 80%; animation: fadeInUp 1s ease; display: flex; align-items: center;">
+                        <i class="fas fa-dumbbell" style="color: #007BFF; margin-right: 10px;"></i>
+                        <p style="font-size: 1rem; color: #555;">I enjoy going to the gym to stay fit and healthy.</p>
+                    </div>
+                    <div class="fun-fact" style="padding: 15px; margin: 10px; border: 1px solid #007BFF; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); background-color: #fff; width: 80%; animation: fadeInUp 1.1s ease; display: flex; align-items: center;">
+                        <i class="fas fa-utensils" style="color: #007BFF; margin-right: 10px;"></i>
+                        <p style="font-size: 1rem; color: #555;">Cooking is one of my favorite hobbies; I love trying new recipes.</p>
+                    </div>
+                    <div class="fun-fact" style="padding: 15px; margin: 10px; border: 1px solid #007BFF; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); background-color: #fff; width: 80%; animation: fadeInUp 1.2s ease; display: flex; align-items: center;">
+                        <i class="fas fa-briefcase" style="color: #007BFF; margin-right: 10px;"></i>
+                        <p style="font-size: 1rem; color: #555;">I'm passionate about entrepreneurship and always looking for new business opportunities.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <style>
+                @keyframes fadeInUp {
+                    from {
+                        opacity: 0;
+                        transform: translateY(20px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            </style>
+            <!-- About -->
+            
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+        
+            <!-- SKILLS -->
+            
+            <div id="skills" class="section" style="padding: 40px; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
+                <h2 style="font-size: 2.5rem; margin-bottom: 30px; text-align: center; color: #333;">Skills</h2>
+                
+                <div class="skills-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+                    
+                    <!-- Technical Skills Column with Progress Bars -->
+                    <div class="skills-column" style="flex: 1; min-width: 300px; max-width: 500px;">
+                        <h3 style="font-size: 1.75rem; color: #333; text-align: center; margin-bottom: 20px;">Technical Skills</h3>
+                        <ul style="list-style: none; padding: 0; font-size: 1.1rem; line-height: 2; color: #555;">
+                            <!-- HTML Skill Item -->
+                            <li class="skill-item" style="margin-bottom: 20px; transition: transform 0.3s; padding: 10px; border-radius: 8px;">
+                                <i class="fab fa-html5" style="color: #e34f26; margin-right: 10px;"></i>HTML
+                                <div class="progress-bar" data-percent="90" style="background-color: #e0e0e0; border-radius: 10px; overflow: hidden;">
+                                    <div class="progress" style="width: 0%; background-color: #e34f26; height: 10px; animation: grow 2s ease-in-out forwards;"></div>
+                                </div>
+                            </li>
+                            <!-- CSS Skill Item -->
+                            <li class="skill-item" style="margin-bottom: 20px; transition: transform 0.3s; padding: 10px; border-radius: 8px;">
+                                <i class="fab fa-css3-alt" style="color: #2965f1; margin-right: 10px;"></i>CSS
+                                <div class="progress-bar" data-percent="85" style="background-color: #e0e0e0; border-radius: 10px; overflow: hidden;">
+                                    <div class="progress" style="width: 0%; background-color: #2965f1; height: 10px; animation: grow 2s ease-in-out forwards;"></div>
+                                </div>
+                            </li>
+                            <!-- JavaScript Skill Item -->
+                            <li class="skill-item" style="margin-bottom: 20px; transition: transform 0.3s; padding: 10px; border-radius: 8px;">
+                                <i class="fab fa-js-square" style="color: #f7df1e; margin-right: 10px;"></i>JavaScript
+                                <div class="progress-bar" data-percent="80" style="background-color: #e0e0e0; border-radius: 10px; overflow: hidden;">
+                                    <div class="progress" style="width: 0%; background-color: #f7df1e; height: 10px; animation: grow 2s ease-in-out forwards;"></div>
+                                </div>
+                            </li>
+                            <!-- PHP Skill Item -->
+                            <li class="skill-item" style="margin-bottom: 20px; transition: transform 0.3s; padding: 10px; border-radius: 8px;">
+                                <i class="fab fa-php" style="color: #4F5B93; margin-right: 10px;"></i>PHP
+                                <div class="progress-bar" data-percent="75" style="background-color: #e0e0e0; border-radius: 10px; overflow: hidden;">
+                                    <div class="progress" style="width: 0%; background-color: #4F5B93; height: 10px; animation: grow 2s ease-in-out forwards;"></div>
+                                </div>
+                            </li>
+                            <!-- C++ Skill Item -->
+                            <li class="skill-item" style="margin-bottom: 20px; transition: transform 0.3s; padding: 10px; border-radius: 8px;">
+                                <i class="fab fa-code" style="color: #00599C; margin-right: 10px;"></i>C++
+                                <div class="progress-bar" data-percent="70" style="background-color: #e0e0e0; border-radius: 10px; overflow: hidden;">
+                                    <div class="progress" style="width: 0%; background-color: #00599C; height: 10px; animation: grow 2s ease-in-out forwards;"></div>
+                                </div>
+                            </li>
+                            <!-- C# Skill Item -->
+                            <li class="skill-item" style="margin-bottom: 20px; transition: transform 0.3s; padding: 10px; border-radius: 8px;">
+                                <i class="fab fa-microsoft" style="color: #5C2D91; margin-right: 10px;"></i>C#
+                                <div class="progress-bar" data-percent="65" style="background-color: #e0e0e0; border-radius: 10px; overflow: hidden;">
+                                    <div class="progress" style="width: 0%; background-color: #5C2D91; height: 10px; animation: grow 2s ease-in-out forwards;"></div>
+                                </div>
+                            </li>
+                            <!-- C Programming Skill Item -->
+                            <li class="skill-item" style="margin-bottom: 20px; transition: transform 0.3s; padding: 10px; border-radius: 8px;">
+                                <i class="fab fa-code" style="color: #A8B9CC; margin-right: 10px;"></i>C Programming
+                                <div class="progress-bar" data-percent="60" style="background-color: #e0e0e0; border-radius: 10px; overflow: hidden;">
+                                    <div class="progress" style="width: 0%; background-color: #A8B9CC; height: 10px; animation: grow 2s ease-in-out forwards;"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+            
+                    <!-- Currently Learning Column -->
+                    <div class="skills-column" style="flex: 1; min-width: 300px; max-width: 500px;">
+                        <h3 style="font-size: 1.75rem; color: #333; text-align: center; margin-bottom: 20px;">Currently Learning</h3>
+                        <div style="padding: 20px; border: 1px solid #007BFF; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); background-color: #fff; text-align: center;">
+                            <i class="fab fa-react" style="color: #61DAFB; font-size: 2rem; margin-bottom: 10px;"></i>
+                            <p style="font-size: 1.2rem; color: #555;">Exploring React.js and enhancing my web development skills.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <style>
+                /* Animation for growing progress bars */
+                @keyframes grow {
+                    from { width: 0%; }
+                    to { width: var(--width); }
+                }
+            
+                /* Zoom effect on hover */
+                .skill-item:hover {
+                    transform: scale(1.05); /* Zooms in the skill item slightly */
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Adds a shadow for depth */
+                }
+            </style>
+            
+            <script>
+                // Set the width of each progress bar according to the data-percent attribute
+                document.addEventListener("DOMContentLoaded", function() {
+                    const progressBars = document.querySelectorAll('.progress-bar');
+                    progressBars.forEach(bar => {
+                        const percent = bar.getAttribute('data-percent');
+                        const progress = bar.querySelector('.progress');
+                        progress.style.setProperty('--width', percent + '%');
+                    });
+                });
+            </script>
+            
+            <!-- SKILLS -->
+            
+            
+            
+
+
+
+
+
+
+
+
+
+
+            <!-- Project -->
+            <div id="projects" class="section" style="display: none; text-align: center;">
+                <h2>Projects</h2>
+                <ul style="list-style-type: none; padding: 0; display: flex; justify-content: space-around; flex-wrap: wrap;">
+                    <!-- Project 1 -->
+                    <li class="project-item" style="position: relative; width: 300px; margin: 20px; overflow: hidden;">
+                        <div class="project-card" style="position: relative; width: 100%; height: auto; background-color: #f4f4f4; border: 2px solid #ddd; border-radius: 8px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: box-shadow 0.3s ease, transform 0.3s ease;">
+                            <div class="project-img-container" style="position: relative; width: 100%; height: 180px; background-color: #333; border-radius: 6px; overflow: hidden;">
+                                <img src="img/project1.png" alt="Don Bosco Information" class="project-img"
+                                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90%; max-width: 250px; height: auto; object-fit: cover; transition: transform 0.3s ease, opacity 0.3s ease;">
+                            </div>
+                            <p><strong>Don Bosco Information</strong></p>
+                            <p>Information and updates about Don Bosco College Canlubang.</p>
+                        </div>
+                    </li>
+            
+                    <!-- Project 2 -->
+                    <li class="project-item" style="position: relative; width: 300px; margin: 20px; overflow: hidden;">
+                        <div class="project-card" style="position: relative; width: 100%; height: auto; background-color: #f4f4f4; border: 2px solid #ddd; border-radius: 8px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: box-shadow 0.3s ease, transform 0.3s ease;">
+                            <div class="project-img-container" style="position: relative; width: 100%; height: 180px; background-color: #333; border-radius: 6px; overflow: hidden;">
+                                <img src="img/project2.png" alt="Bakeshop Website" class="project-img"
+                                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90%; max-width: 250px; height: auto; object-fit: cover; transition: transform 0.3s ease, opacity 0.3s ease;">
+                            </div>
+                            <p><strong>Bakeshop Website</strong></p>
+                            <p>A website for managing bakeshop orders and information.</p>
+                        </div>
+                    </li>
+            
+                    <!-- Project 3 -->
+                    <li class="project-item" style="position: relative; width: 300px; margin: 20px; overflow: hidden;">
+                        <div class="project-card" style="position: relative; width: 100%; height: auto; background-color: #f4f4f4; border: 2px solid #ddd; border-radius: 8px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: box-shadow 0.3s ease, transform 0.3s ease;">
+                            <div class="project-img-container" style="position: relative; width: 100%; height: 180px; background-color: #333; border-radius: 6px; overflow: hidden;">
+                                <img src="img/project3.png" alt="HondaClick160 Website" class="project-img"
+                                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90%; max-width: 250px; height: auto; object-fit: cover; transition: transform 0.3s ease, opacity 0.3s ease;">
+                            </div>
+                            <p><strong>HondaClick160 Website</strong></p>
+                            <p>A website dedicated to the Honda Click 160 2024 model with customer engagement features.</p>
+                        </div>
+                    </li>
+            
+                    <!-- Project 4 -->
+                    <li class="project-item" style="position: relative; width: 300px; margin: 20px; overflow: hidden;">
+                        <div class="project-card" style="position: relative; width: 100%; height: auto; background-color: #f4f4f4; border: 2px solid #ddd; border-radius: 8px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: box-shadow 0.3s ease, transform 0.3s ease;">
+                            <div class="project-img-container" style="position: relative; width: 100%; height: 180px; background-color: #333; border-radius: 6px; overflow: hidden;">
+                                <img src="img/project4.png" alt="RFID Attendance System" class="project-img"
+                                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90%; max-width: 250px; height: auto; object-fit: cover; transition: transform 0.3s ease, opacity 0.3s ease;">
+                            </div>
+                            <p><strong>RFID Attendance System</strong></p>
+                            <p>An RFID-based attendance system specifically designed for Don Bosco College Canlubang.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <style>
+                /* Animation and hover effects */
+                .project-item {
+                    transition: transform 0.3s ease-in-out;
+                }
+            
+                .project-item:hover {
+                    transform: scale(1.05);
+                }
+            
+                .project-card {
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+            
+                .project-item:hover .project-card {
+                    transform: translateY(-10px);
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                }
+            
+                .project-img {
+                    transition: transform 0.3s ease, opacity 0.3s ease;
+                }
+            
+                .project-item:hover .project-img {
+                    transform: scale(1.1);
+                    opacity: 0.8;
+                }
+            </style>
+            
+            
+           
+          
+            
+            <!-- Project -->
+
+
+
+
+
+
+
+
+
+            
+            <!-- academic-->
+            
+            
+            <div id="academic" class="section" style="display:none; background-color: #f7f9fc; padding: 40px; margin: 20px auto; border-radius: 15px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); max-width: 900px; font-family: 'Arial', sans-serif;">
+                <h2 style="font-size: 2.5em; font-weight: 700; color: #333; text-align: center; margin-bottom: 40px; text-transform: uppercase;">Academic Experience</h2>
+            
+                <!-- Courses and Learning Progression -->
+                <div class="section-content" style="margin-bottom: 40px;">
+                    <h3 style="font-size: 2em; font-weight: 600; color: #444; margin-bottom: 20px;">Courses & Learning Progression</h3>
+                    <p style="font-size: 1.1em; color: #555; margin-bottom: 20px; text-align: justify;">My academic journey in programming spans several years, starting with foundational programming languages and evolving into advanced topics such as mobile development and web systems.</p>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li style="font-size: 1.1em; margin-bottom: 25px; line-height: 1.6; color: #555; display: flex; align-items: center;">
+                            <i class="fas fa-laptop-code" style="margin-right: 15px; color: #4CAF50; font-size: 1.6em;"></i>
+                            <strong>First Year (C++):</strong> I began with C++, learning the basics of coding, data structures, and algorithms, which laid the groundwork for my future projects.
+                        </li>
+                        <li style="font-size: 1.1em; margin-bottom: 25px; line-height: 1.6; color: #555; display: flex; align-items: center;">
+                            <i class="fas fa-cogs" style="margin-right: 15px; color: #4CAF50; font-size: 1.6em;"></i>
+                            <strong>Second Semester (Java):</strong> I transitioned to Java, diving deeper into object-oriented programming, which enhanced my ability to build modular, maintainable applications.
+                        </li>
+                        <li style="font-size: 1.1em; margin-bottom: 25px; line-height: 1.6; color: #555; display: flex; align-items: center;">
+                            <i class="fas fa-windows" style="margin-right: 15px; color: #4CAF50; font-size: 1.6em;"></i>
+                            <strong>Third Semester (C#):</strong> This semester focused on Windows application development using C#, providing me with valuable insights into desktop software creation.
+                        </li>
+                        <li style="font-size: 1.1em; margin-bottom: 25px; line-height: 1.6; color: #555; display: flex; align-items: center;">
+                            <i class="fas fa-mobile-alt" style="margin-right: 15px; color: #4CAF50; font-size: 1.6em;"></i>
+                            <strong>Second Year (Mobile App Development):</strong> I learned mobile app development using React Native, enabling me to create apps that function seamlessly across multiple platforms.
+                        </li>
+                        <li style="font-size: 1.1em; margin-bottom: 25px; line-height: 1.6; color: #555; display: flex; align-items: center;">
+                            <i class="fas fa-code" style="margin-right: 15px; color: #4CAF50; font-size: 1.6em;"></i>
+                            <strong>Third Year (Web Development):</strong> I expanded my skills in web development, building full-stack applications using PHP and XAMPP, integrating databases for dynamic content management.
+                        </li>
+                        <li style="font-size: 1.1em; margin-bottom: 25px; line-height: 1.6; color: #555; display: flex; align-items: center;">
+                            <i class="fas fa-project-diagram" style="margin-right: 15px; color: #4CAF50; font-size: 1.6em;"></i>
+                            <strong>Fourth Year (Capstone Project):</strong> Currently, I'm focusing on my capstone project, combining web, mobile, and database development to create a comprehensive system.
+                        </li>
+                    </ul>
+                </div>
+            
+                <!-- Group Projects -->
+                <div class="section-content" style="margin-bottom: 40px;">
+                    <h3 style="font-size: 2em; font-weight: 600; color: #444; margin-bottom: 20px;">Group Projects</h3>
+                    <p style="font-size: 1.1em; color: #555; margin-bottom: 20px; text-align: justify;">Collaborating with peers on group projects has allowed me to apply my skills to real-world scenarios, such as:</p>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li style="font-size: 1.1em; margin-bottom: 25px; line-height: 1.6; color: #555; display: flex; align-items: center;">
+                            <i class="fas fa-users" style="margin-right: 15px; color: #FF5722; font-size: 1.6em;"></i>
+                            <strong>Student Information System:</strong> Developed a web app to manage student data, including attendance and grades, utilizing PHP, MySQL, and JavaScript.
+                        </li>
+                        <li style="font-size: 1.1em; margin-bottom: 25px; line-height: 1.6; color: #555; display: flex; align-items: center;">
+                            <i class="fas fa-mobile-alt" style="margin-right: 15px; color: #FF5722; font-size: 1.6em;"></i>
+                            <strong>Mobile Application Projects:</strong> Worked on cross-platform mobile apps using React Native, focusing on UI/UX design and integrating features to enhance user engagement.
+                        </li>
+                    </ul>
+                </div>
+            
+                <!-- Key Achievements -->
+                <div class="section-content" style="margin-bottom: 40px;">
+                    <h3 style="font-size: 2em; font-weight: 600; color: #444; margin-bottom: 20px;">Key Achievements</h3>
+                    <p style="font-size: 1.1em; color: #555; margin-bottom: 20px; text-align: justify;">In addition to coursework and group projects, I have actively participated in various seminars and workshops that have expanded my knowledge, including:</p>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li style="font-size: 1.1em; margin-bottom: 25px; line-height: 1.6; color: #555; display: flex; align-items: center;">
+                            <i class="fas fa-seminar" style="margin-right: 15px; color: #FFC107; font-size: 1.6em;"></i>
+                            <strong>Adobe Firefly Seminar:</strong> Gained insights into the latest advancements in design tools for web and mobile development.
+                        </li>
+                        <li style="font-size: 1.1em; margin-bottom: 25px; line-height: 1.6; color: #555; display: flex; align-items: center;">
+                            <i class="fas fa-laptop-code" style="margin-right: 15px; color: #FFC107; font-size: 1.6em;"></i>
+                            <strong>Freelance Projects:</strong> Worked on freelance web development projects, gaining hands-on experience in customizing solutions for clients.
+                        </li>
+                        <li style="font-size: 1.1em; margin-bottom: 25px; line-height: 1.6; color: #555; display: flex; align-items: center;">
+                            <i class="fas fa-briefcase" style="margin-right: 15px; color: #FFC107; font-size: 1.6em;"></i>
+                            <strong>DTI Seminar:</strong> Attended a seminar on entrepreneurship, focusing on leveraging technology to drive business success.
+                        </li>
+                        <li style="font-size: 1.1em; margin-bottom: 25px; line-height: 1.6; color: #555; display: flex; align-items: center;">
+                            <i class="fas fa-video" style="margin-right: 15px; color: #FFC107; font-size: 1.6em;"></i>
+                            <strong>Zoom Webinars:</strong> Participated in webinars about emerging technologies, keeping up with the latest industry trends.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Footer -->
+            <footer class="text-center mt-4" style="margin-top: 20px;">
+                <p>&copy; 2024 Jimwel Hurry. All Rights Reserved.</p>
+            </footer>
+            
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
