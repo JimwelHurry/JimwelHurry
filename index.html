@@ -28,13 +28,13 @@
 </head>
 <body>
     
-            <div class="container">
+<div class="container">
     <!-- First Card: Contact Information -->
     <div class="card contact-card" style="background-color: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 20px; width: 300px; margin: 20px auto;">
         <header style="text-align: center; margin-bottom: 20px;">
             <img src="img/jimwel.JPG" alt="Profile Picture" class="profile-pic mb-3" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid #ddd;">
-            <h1 id="typing-name" style="font-size: 1.5rem; color: #333; margin-top: 10px;">Web Developer | Student | Programmer</h1> <!-- Typing effect here -->
-            <p id="typing-desc" style="font-size: 1rem; color: #666;">Web Developer | Student | Programmer</p> <!-- Typing effect for description -->
+            <h1 style="font-size: 1.5rem; color: #333; margin-top: 10px;">Jimwel Hurry</h1>
+            <p style="font-size: 1rem; color: #666;">Web Developer | Student | Programmer</p>
         </header>
         <div class="contact-info">
             <h2 style="font-size: 1.2rem; color: #444; margin-bottom: 10px;">Contact Information</h2>
@@ -63,67 +63,7 @@
         transform: scale(1.1);
         color: #007bff; /* Highlight color */
     }
-
-    /* Typing effect */
-    #typing-name, #typing-desc {
-        border-right: 3px solid #333;
-        padding-right: 5px;
-        white-space: nowrap;
-        overflow: hidden;
-        display: inline-block;
-    }
-
-    .typing-effect {
-        animation: typing 3s steps(20) 1s 1 normal both, blinkCaret 0.75s step-end infinite;
-    }
-
-    @keyframes typing {
-        from {
-            width: 0;
-        }
-        to {
-            width: 100%;
-        }
-    }
-
-    @keyframes blinkCaret {
-        50% {
-            border-color: transparent;
-        }
-    }
 </style>
-
-<!-- JavaScript for typing effect -->
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        let nameElement = document.getElementById('typing-name');
-        let descElement = document.getElementById('typing-desc');
-        
-        // Text to be typed
-        let nameText = "Jimwel Hurry";
-        let descText = "Web Developer | Student | Programmer";
-        
-        // Function to type text
-        function typeText(element, text, delay) {
-            let i = 0;
-            element.textContent = "";
-            let typingInterval = setInterval(function() {
-                element.textContent += text.charAt(i);
-                i++;
-                if (i === text.length) clearInterval(typingInterval);
-            }, 100); // Speed of typing
-        }
-        
-        // Type the name and description after a small delay
-        setTimeout(() => {
-            typeText(nameElement, nameText, 0);
-        }, 500); // Delay before starting the name typing effect
-        
-        setTimeout(() => {
-            typeText(descElement, descText, 0);
-        }, 1500); // Delay before starting the description typing effect
-    });
-</script>
 
             
 
