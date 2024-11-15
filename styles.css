@@ -1,10 +1,13 @@
+/* Global styles */
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-size: cover;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
 }
 
+/* Container for layout */
 .container {
   display: flex;
   flex-direction: row;
@@ -12,94 +15,105 @@ body {
   align-items: stretch;
   height: 100vh;
   padding: 20px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+  border-radius: 10px;
 }
 
+/* Individual Contact Cards */
+.contact-card, .large-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 30px;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  overflow-y: auto;
+}
+
+.contact-card:hover, .large-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact card specific styles */
 .contact-card {
   flex: 1;
   max-width: 400px;
-  min-height: 600px;
+  min-height: 500px;
   text-align: center;
-  border: 2px solid #007bff;
-  border-radius: 10px;
-  background-color: #f9f9f9;
-  padding: 30px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  overflow-y: auto;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.contact-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  margin: 20px;
 }
 
 .large-card {
   flex: 2;
-  padding: 20px;
-  border: 2px solid #007bff;
-  border-radius: 10px;
-  background-color: #f9f9f9;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  margin: 10px;
-  overflow-y: auto;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 30px;
+  margin: 20px;
+  max-width: 1000px;
 }
 
-.large-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+/* Text styling */
+h1, h2, h3 {
+  color: #2c3e50;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+p {
+  line-height: 1.8;
+  color: #7f8c8d;
 }
 
 .contact-info {
-  margin-top: 20px;
-  line-height: 1.6;
+  margin-top: 30px;
 }
 
+/* Social Icons */
 .social-icons {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .social-icons a {
-  margin: 0 10px;
-  color: #007bff;
-  font-size: 20px;
-  text-decoration: none;
+  margin: 0 12px;
+  color: #3498db;
+  font-size: 22px;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: #0056b3;
-  transform: scale(1.2);
+  color: #2980b9;
+  transform: scale(1.25);
 }
 
+/* Navbar Styling */
 .navbar {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  padding: 10px 0;
+  background-color: #fff;
+  border-radius: 8px;
 }
 
 .navbar a {
   text-decoration: none;
-  color: #007bff;
-  padding: 10px;
+  color: #3498db;
+  padding: 10px 15px;
+  font-weight: 600;
+  border-radius: 6px;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .navbar a:hover {
-  color: #0056b3;
+  color: #2980b9;
   transform: translateY(-3px);
 }
 
+/* Fade-in Animation for Sections */
 .section {
   display: none;
   opacity: 0;
-  animation: fadeIn 0.5s forwards;
+  animation: fadeIn 0.8s forwards;
 }
 
 .fade-in {
@@ -107,18 +121,20 @@ body {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
+/* Profile picture */
 .profile-pic {
-  width: 160px;
-  height: 160px;
-  border-radius: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   object-fit: cover;
+  margin: 20px 0;
 }
 
-/* Responsive styling for mobile view */
+/* Responsive styling */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -128,9 +144,8 @@ body {
   }
 
   .contact-card, .large-card {
-    max-width: 100%;
-    min-height: auto;
-    margin: 10px 0;
+    max-width: 90%;
+    margin: 15px 0;
   }
 
   .navbar {
@@ -140,7 +155,7 @@ body {
   }
 
   .navbar a {
-    padding: 8px;
+    padding: 10px 20px;
   }
 
   .social-icons {
