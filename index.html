@@ -67,75 +67,7 @@
             </div>
         </div>
     </div>
-</div>
 
-<!-- Add hover effect for social icons -->
-<style>
-    .social-icons a:hover {
-        transform: scale(1.1);
-        color: #007bff; /* Highlight color */
-    }
-
-    /* Typing effect */
-    #typing-name, #typing-desc {
-        border-right: 3px solid #333;
-        padding-right: 5px;
-        white-space: nowrap;
-        overflow: hidden;
-        display: inline-block;
-    }
-
-    .typing-effect {
-        animation: typing 3s steps(20) 1s 1 normal both, blinkCaret 0.75s step-end infinite;
-    }
-
-    @keyframes typing {
-        from {
-            width: 0;
-        }
-        to {
-            width: 100%;
-        }
-    }
-
-    @keyframes blinkCaret {
-        50% {
-            border-color: transparent;
-        }
-    }
-</style>
-
-<!-- JavaScript for typing effect -->
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        let nameElement = document.getElementById('typing-name');
-        let descElement = document.getElementById('typing-desc');
-        
-        // Text to be typed
-        let nameText = "Jimwel Hurry";
-        let descText = "Web Developer | Student | Programmer";
-        
-        // Function to type text
-        function typeText(element, text, delay) {
-            let i = 0;
-            element.textContent = "";
-            let typingInterval = setInterval(function() {
-                element.textContent += text.charAt(i);
-                i++;
-                if (i === text.length) clearInterval(typingInterval);
-            }, 100); // Speed of typing
-        }
-        
-        // Type the name and description after a small delay
-        setTimeout(() => {
-            typeText(nameElement, nameText, 0);
-        }, 500); // Delay before starting the name typing effect
-        
-        setTimeout(() => {
-            typeText(descElement, descText, 0);
-        }, 1500); // Delay before starting the description typing effect
-    });
-</script>
 
 
 
